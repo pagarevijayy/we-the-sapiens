@@ -1,26 +1,36 @@
 .header {
     .header-wrapper {
-        .header-title {
-            font-size: 1.5em;
-            &:hover{
-                transform: scale(1.05);
+        padding: 0 3rem;
+        font-size: 1.25em;
+
+        // .header-title { }
+
+        .header-quote {
+            font-size: 0.85em;
+            max-width: 775px;
+            .hide-quote {
+                display: block;
+                @media screen and (max-width: 991px) {
+                    display: none;
+                }
             }
-        }
-        .header-quote{
-            // margin-bottom: -20px;
-            &:hover{
-                transform: scale(0.95);
-            }
-        }
-        .header-about {
-            font-size: 1.25em;
-            &:hover{
-                transform: scale(1.15);
+            .quote-author {
+                font-size: 0.75em;
             }
         }
 
-        .scale-on-hover{
-            transition: transform .3s ease-in-out;
+        // .header-about { }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 1em;
+            padding: 0 1em;
+        }
+
+        .scale-on-hover {
+            &:hover {
+                transition: transform 0.2s ease-in-out;
+                transform: scale(1.15);
+            }
         }
     }
 }
