@@ -1,0 +1,36 @@
+.header {
+    .header-wrapper {
+        padding: 0 3rem;
+        font-size: 1.25em;
+
+        // .header-title { }
+
+        .header-quote {
+            font-size: 0.85em;
+            max-width: 775px;
+            .hide-quote {
+                display: block;
+                @media screen and (max-width: 991px) {
+                    display: none;
+                }
+            }
+            .quote-author {
+                font-size: 0.75em;
+            }
+        }
+
+        // .header-about { }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 1em;
+            padding: 0 1em;
+        }
+
+        .scale-on-hover {
+            &:hover {
+                transition: transform 0.2s ease-in-out;
+                transform: scale(1.15);
+            }
+        }
+    }
+}
