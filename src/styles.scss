@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+// Dark theme:
+$brand-dark-bg: #121212 !default;
+$brand-dark-text: #ffffff !default;
+
+// Light theme:
+$brand-light-bg: #ffffff !default;
+$brand-light-text: #121212 !default;
+
+// theme
+$brand-theme: $brand-dark-bg;
+$brand-theme-text: $brand-dark-text;
+
+body {
+    font-family: "Roboto", sans-serif !important;
+    background-color: $brand-dark-bg !important;
+    color: $brand-dark-text !important;
+    height: 100vh;
+}

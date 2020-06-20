@@ -1,0 +1,26 @@
+.header {
+    .header-wrapper {
+        .header-title {
+            font-size: 1.5em;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        .header-quote{
+            // margin-bottom: -20px;
+            &:hover{
+                transform: scale(0.95);
+            }
+        }
+        .header-about {
+            font-size: 1.25em;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+
+        .scale-on-hover{
+            transition: transform .3s ease-in-out;
+        }
+    }
+}
