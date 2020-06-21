@@ -4,6 +4,21 @@
         padding-bottom: 3rem;
         text-align: justify;
 
+        .launching-soon{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            .launch-text{
+                font-size: 1.75em;
+                @media screen and (max-width: 1200px) {
+                    font-size: 1.25em;
+                }
+            }
+        }
+
         @media screen and (max-width: 1200px) {
             padding: 1em;
             text-align: left;
