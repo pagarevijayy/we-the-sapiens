@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceService } from 'src/app/services';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -15,7 +17,8 @@ export class HeaderComponent implements OnInit {
   public isMobile: boolean;
 
   constructor(
-    private _deviceService: DeviceService
+    private _deviceService: DeviceService,
+    private _router: Router
   ) { }
 
   ngOnInit(): void {
@@ -23,6 +26,10 @@ export class HeaderComponent implements OnInit {
 
     // change the menu quote and author after set interval (selective 7-8)
 
+  }
+
+  navigate(route: string) {
+    this._router.navigate([`/${route}`]);
   }
 
 }
