@@ -1,0 +1,12 @@
+.home-page {
+    .home-wrapper {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: justify;
+
+        @media screen and (max-width: 1200px) {
+            padding: 1em;
+            text-align: left;
+        }
+    }
+}

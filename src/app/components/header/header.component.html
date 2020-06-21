@@ -1,13 +1,13 @@
 <div class="header">
-    <div class="header-wrapper animate__animated animate__fadeIn container-fluid py-4 d-flex justify-content-between align-items-center">
-        <div class="header-title cursor-pointer d-inline scale-on-hover">
+    <div class="header-wrapper animate__animated animate__fadeIn container py-4 d-flex justify-content-between align-items-center">
+        <div class="header-title cursor-pointer d-inline scale-on-hover" (click)="navigate('home')">
             <span class="d-block">{{title}} </span>
         </div>
-        <div class="header-quote d-inline text-center px-2">
+        <!-- <div class="header-quote d-inline text-center px-2">
             <span class="hide-quote"> {{quote}} </span>
             <span class="hide-quote quote-author"> - {{quoteAuthor}} </span>
-        </div>
-        <div class="header-about cursor-pointer d-inline scale-on-hover">
+        </div> -->
+        <div class="header-about cursor-pointer d-inline scale-on-hover" (click)="navigate('about')">
             <span class="d-block">{{about}}</span>
         </div>
     </div>
